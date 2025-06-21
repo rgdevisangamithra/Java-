@@ -1,0 +1,41 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class StudentList {
+    public static void main(String[] args) {
+        
+        ArrayList<String> students = new ArrayList<>();
+
+        
+        students.add("Abipriya");
+        students.add("Bharath");
+        students.add("Divya");
+        students.add("Karthik");
+        System.out.println("Student List: " + students);
+
+
+        System.out.println("Student at index 2: " + students.get(2));
+
+        
+        students.set(1, "Bharathi");
+        System.out.println("Updated List: " + students);
+
+       
+        students.remove("Divya");
+        System.out.println("After Removal: " + students);
+
+
+        boolean hasKarthik = students.contains("Karthik");
+        System.out.println("Is Karthik in the list? " + hasKarthik);
+
+        
+        System.out.println("Total students: " + students.size());
+
+        
+        Collections.sort(students);
+        System.out.println("Sorted List: " + students);
+
+        students.clear();
+        System.out.println("After Clearing: " + students);
+    }
+}
